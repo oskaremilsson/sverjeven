@@ -1,18 +1,36 @@
 body {
   padding: 0;
   margin: 0;
-  background: blue;
   color: yellow;
   text-align: center;
+  background: url("../img/sverje.jpg");
 }
 
 h1 {
   color: yellow;
 }
 
+.header-img {
+  width: 80px;
+}
+
+#header {
+  background: blue;
+}
+
+.header-text {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
 #wrapper {
   width: 800px;
   margin: 0 auto;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 textarea {
@@ -28,10 +46,26 @@ textarea {
 .form-box textarea{
   width: 350px;
   height: 200px;
+  background: yellow;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: 2px solid blue;
+}
+
+button {
+  background: yellow;
+  border-radius: 2px;
+  border: none;
+  height: 30px;
+  border: 2px solid blue;
 }
 
 .btn-copy {
   float: right;
+}
+
+.copy-icon {
+  height: 24px;
 }
 
 .btn-submit {
@@ -43,7 +77,6 @@ textarea {
     width: 90%;
   }
     .form-box {
-      float: none;
       display:block;
       width: 100%;
       margin: 0;
@@ -56,7 +89,7 @@ textarea {
     }
 
     .btn-copy {
-      float: none;
+      float: left;
     }
 
 }
