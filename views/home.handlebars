@@ -1,0 +1,18 @@
+<div class="form-box">
+<form method="post">
+  <h4>PK TEKTS:</h4>
+  <textarea name="text">{{text}}</textarea>
+  <br>
+  <button type="submit" class="btn-submit">{{#if done}}sverje venligt IGEN!!{{else}}Bli en sverje ven{{/if}}</button>
+</form>
+</div>
+
+  <div class="form-box">
+  <h4>SVERIE vännlig täxt:</h4>
+  <textarea id="output" name="output" rows="8" cols="50">  {{#if 1}}{{output}}{{/if}}</textarea><br>
+  <button type="button" class="btn-copy" data-clipboard-target="#output">Kåpiera</button>
+  <div class="form-box">
+
+  <svg viewBox="0 0 100 100">
+   <use xlink:href="img/ic_content_copy_white.svg"></use>
+</svg>
