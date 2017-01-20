@@ -2,4 +2,6 @@
 
 Usage:
 > nodejs app.js
-using port 3000
+
+
+app.js default using port 3000
