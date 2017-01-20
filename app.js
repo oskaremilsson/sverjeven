@@ -48,9 +48,8 @@ app.post('/', function (req, res) {
   var python = require('child_process').spawn(
      'python3',
      // second argument is array of parameters, e.g.:
-     ["/home/kitty/Documents/Projects/sverjeven/bad_scripts/sverje_ven.py", "input.txt"]//req.query["s"]]
+     [__dirname + "/bad_scripts/sverje_ven.py", "input.txt"]
      );
-
   /*python.stdout.on('data', function(data){
       output += data;
     });*/
@@ -81,7 +80,7 @@ app.post('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('App listening on port 3000!');
 });
 
 function saveInputToTempFile(data) {
