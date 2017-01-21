@@ -76,20 +76,25 @@ button {
   #wrapper {
     width: 90%;
   }
-    .form-box {
-      display:block;
-      width: 100%;
-      margin: 0;
-    }
+  .form-box {
+    display:block;
+    width: 100%;
+    margin: 0;
+  }
 
-    .form-box textarea{
-      width: 99%;
-      height: 200px;
-      padding: 1%;
-    }
+  .form-box textarea{
+    width: 99%;
+    height: 200px;
+    padding: 1%;
+  }
 
-    .btn-copy {
-      float: left;
-    }
+  .btn-copy {
+    float: left;
+  }
+}
 
+@media screen and (max-width:450px) {
+  .header-text {
+    display: block;
+  }
 }
